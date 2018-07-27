@@ -21,4 +21,4 @@ require('module-inject')()('stylus-loader', function (str) {
   }
 
   return str.replace(search, inject + '\n\n  ' + search);
-});
+}, true);
