@@ -1,0 +1,25 @@
+{
+  "name": "stylus-loader-inject",
+  "version": "1.0.0",
+  "description": "Inject config to stylus-loader",
+  "author": "billypon <billypon@gmail.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "bin": {
+    "stylus-loader-inject": "inject.js"
+  },
+  "scripts": {
+    "test": "mocha",
+    "pretest": "./inject.js"
+  },
+  "dependencies": {
+    "module-inject": "^1.1.1"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "mocha": "^5.2.0",
+    "stylus": ">=0.54.5",
+    "stylus-loader": ">=3.0.1",
+    "webpack": ">=3.11.0"
+  }
+}
