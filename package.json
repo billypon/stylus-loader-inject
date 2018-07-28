@@ -13,7 +13,7 @@
     "pretest": "./inject.js"
   },
   "dependencies": {
-    "module-inject": "^1.1.1"
+    "module-inject": "^1.2.1"
   },
   "devDependencies": {
     "assert": "^1.4.1",
