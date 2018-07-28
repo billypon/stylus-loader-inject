@@ -17,7 +17,7 @@ require('module-inject')()('stylus-loader', function (str) {
   }
 
   if (str.indexOf(search) < 0) {
-    throw 'fail to inject to stylus-loader';
+    throw new Error('fail to inject to stylus-loader');
   }
 
   return str.replace(search, inject + '\n\n  ' + search);
