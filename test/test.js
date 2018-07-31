@@ -5,6 +5,6 @@ it('inject', function () {
   var module = find('stylus-loader');
   var file = require.resolve(module);
   var fs = require('fs');
-  var str = fs.readFileSync(file).toString();
+  var str = fs.readFileSync(file, 'utf-8');
   assert.equal(true, str.indexOf('(require(process.cwd()))(options);') > 0);
 });
